@@ -3,7 +3,6 @@ var app = new Vue(
         el: '#app',
         data: {
             currentActiveElement: 0,
-            thumbIsActive: true,
             slides: [
                 {
                     image: 'img/01.jpg',
@@ -53,9 +52,6 @@ var app = new Vue(
                 } else {
                     this.currentActiveElement = this.slides.length - 1;
                 }
-            },
-            toggleActive() {
-                this.thumbIsActive = !this.thumbIsActive
             }
         }
     }
